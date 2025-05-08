@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dogs</title>
+    <meta name="description" content="Meet my dogs, Ellie Mae and Scott.">
+    <title>My Dogs - John Skaggs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-        }
-        h1 {
+            line-height: 1.6;
+            background-color: #f4f4f4;
             color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .gallery {
             display: flex;
@@ -28,26 +51,45 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Meet My Dogs</h1>
+        <p>Ellie Mae and Scott - My beloved companions.</p>
+    </header>
+
     <nav>
-        <a href="#ellie">Ellie Mae Dog Skaggs</a>
-        <a href="#scott">Scott "The Dog" Skaggs</a>
+        <a href="index.html">Home</a>
+        <a href="#ellie">Ellie Mae</a>
+        <a href="#scott">Scott</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="ellie">
-        <h1>Ellie Mae Dog Skaggs</h1>
+        <h2>Ellie Mae Dog Skaggs</h2>
         <p>Ellie is a 7-month-old Standard Australian Shepherd who loves to play fetch and go for long walks.</p>
-    <div class="gallery">
-        <img src="images/ellie/ellie_in_chair.jpg" alt="Ellie sitting in my home office chair">
-        <img src="dog2.jpg" alt="Dog 2">
-        <img src="dog3.jpg" alt="Dog 3">
-    </div>
+        <div class="gallery">
+            <img src="images/ellie/ellie_in_chair.jpg" alt="Ellie sitting in my home office chair">
+            <img src="images/ellie/dog2.jpg" alt="Ellie playing outside">
+            <img src="images/ellie/dog3.jpg" alt="Ellie enjoying a sunny day">
+        </div>
+    </section>
 
     <section id="scott">
-        <h1>Scott "The Dog" Skaggs</h1>
-        <p>Scott was my beloved pet.</p>
+        <h2>Scott "The Dog" Skaggs</h2>
+        <p>Scott was my beloved pet who brought joy and love to my life.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 John Skaggs. All rights reserved.</p>
+    </footer>
 </body>
 </html>
