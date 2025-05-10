@@ -50,3 +50,9 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+p {
+    text-align: justify;
+  }
+h1, h2 {
+    text-align: center;
+}
