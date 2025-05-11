@@ -9,7 +9,10 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 20px;
+    padding: 1rem 0;
+    text-align: center;
+}
+header p {
     text-align: center;
 }
 nav {
@@ -45,14 +48,17 @@ section {
 }
 footer {
     text-align: center;
-    padding: 1rem 20px;
+    padding: 1rem 0;
     background: #333;
     color: #fff;
     margin-top: 2rem;
 }
-p {
-    text-align: justify;
-  }
+footer p {
+    text-align: center;
+}
 h1, h2 {
     text-align: center;
+}
+body p {
+    text-align: justify;
 }
