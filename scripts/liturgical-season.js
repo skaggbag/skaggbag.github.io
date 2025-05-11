@@ -28,4 +28,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const season = getLiturgicalSeason();
     seasonElement.textContent = `Current Liturgical Season: ${season}`;
+    console.log(`liturgical-season.js is loaded and running"`);
 });
