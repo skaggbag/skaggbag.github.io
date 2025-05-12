@@ -83,6 +83,9 @@ body p {
 }
 
 figure {
+  width: 300px;
+  height: auto;
+  display: block;
   text-align: center;
   margin: 20px 0;
 }
