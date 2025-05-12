@@ -83,11 +83,15 @@ body p {
 }
 
 figure {
-  width: 300px;
-  height: auto;
-  display: block;
   text-align: center;
   margin: 20px 0;
+}
+
+figure img {
+  width: 300px; /* Adjust the size of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image */
 }
 
 figcaption {
