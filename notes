@@ -1,0 +1,3 @@
+Start the server: `python3 -m http.server`.
+
+By default, this will serve your files at http://localhost:8000. Open this URL in your browser.

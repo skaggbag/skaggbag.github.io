@@ -99,3 +99,20 @@ figcaption {
   color: #555;
   margin-top: 5px;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Add spacing between the logo and the links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:first-child {
+    margin-right: 20px; /* Add space between the logo and the first link */
+}
