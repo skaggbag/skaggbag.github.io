@@ -93,6 +93,7 @@ nav {
     align-items: center;
     justify-content: center; /* Align items to the center */
     gap: 20px; /* Add spacing between the logo and the links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 nav a {
@@ -100,4 +101,16 @@ nav a {
     color: #333;
     margin: 0 15px;
     font-weight: bold;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduce spacing between items */
+    }
+
+    nav a {
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
 }
