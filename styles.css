@@ -18,18 +18,6 @@ header > p {
     text-align: center !important;
 }
 
-nav {
-    text-align: center;
-    margin: 1rem 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
 section {
     max-width: 800px;
     margin: 2rem auto;
@@ -103,12 +91,7 @@ figcaption {
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: center; /* Align items to the center */
     gap: 20px; /* Add spacing between the logo and the links */
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
