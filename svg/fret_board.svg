@@ -1,0 +1,23 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Center the drawing by shifting all elements right and down -->
+    <!-- Vertical lines -->
+    <g stroke="black" stroke-width="2">
+        <line x1="80" y1="60" x2="80" y2="260"/>
+        <line x1="110" y1="60" x2="110" y2="260"/>
+        <line x1="140" y1="60" x2="140" y2="260"/>
+        <line x1="170" y1="60" x2="170" y2="260"/>
+        <line x1="200" y1="60" x2="200" y2="260"/>
+        <line x1="230" y1="60" x2="230" y2="260"/>
+    </g>
+    <!-- Horizontal lines -->
+    <g stroke="black" stroke-width="2">
+        <line x1="80" y1="60" x2="230" y2="60"/>
+        <line x1="80" y1="100" x2="230" y2="100"/>
+        <line x1="80" y1="140" x2="230" y2="140"/>
+        <line x1="80" y1="180" x2="230" y2="180"/>
+        <line x1="80" y1="220" x2="230" y2="220"/>
+        <line x1="80" y1="260" x2="230" y2="260"/>
+    </g>
+    <!-- Red circle -->
+    <circle cx="110" cy="120" r="12" fill="red" />
+</svg>
