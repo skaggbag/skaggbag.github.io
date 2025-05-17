@@ -1,4 +1,6 @@
 <svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Symbols above fretboard -->
+        <text x="80" y="12" text-anchor="middle" font-size="16" fill="black" font-family="Arial" font-weight="bold">X</text>
     <!-- Strings -->
     <g stroke="black" stroke-width="2">
         <line x1="80" y1="25" x2="80" y2="275"/>
@@ -17,7 +19,10 @@
         <line x1="80" y1="225" x2="230" y2="225"/>
         <line x1="80" y1="275" x2="230" y2="275"/>
     </g>
-    <!-- Root Note -->
-       <circle cx="110" cy="150" r="12" fill="white" stroke="red" stroke-width="2"/>
+    <!-- Root note -->
+    <circle cx="110" cy="150" r="12" fill="white" stroke="red" stroke-width="2"/>
     <text x="110" y="155" text-anchor="middle" font-size="16" fill="red" font-family="Arial" font-weight="bold">R</text>
+    <!-- Notes -->
+    <circle cx="140" cy="100" r="12" fill="black"/>
+    <circle cx="200" cy="50" r="12" fill="black"/>
 </svg>

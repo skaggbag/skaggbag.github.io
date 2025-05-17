@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <h1>Chord Practice</h1>
+    <div class="chord-practice-center">
+        <button id="startBtn">Get Chords</button>
+        <div id="chords"></div>
+        <div id="timer"></div>
+    </div>
+
+  <script>
+    function generateChords() {
+      const roots = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
+      const suffix = [" maj", " min", "7", " min7", " maj7", " Power"];
+      const chords = [];
+      for (const note of roots) {
+        for (const s of suffix) {
+          chords.push(note + s);
+        }
+      }
+      return chords;
+    }
+
+    function generateChordForms(chords) {
+      const forms = ["A", "C", "D", "E", "G"].sort();
+      const chordForms = [];
+      for (const chord of chords) {
+        for (const form of forms) {
+          chordForms.push(`${chord} in the ${form} form`);
+        }
+      }
+      return chordForms;
+    }
+
+    function getRandomPair(arr) {
+      let first = arr[Math.floor(Math.random() * arr.length)];
+      let second = arr[Math.floor(Math.random() * arr.length)];
+      while (first === second) {
+        second = arr[Math.floor(Math.random() * arr.length)];
+      }
+      return [first, second];
+    }
+
+    document.getElementById('startBtn').onclick = function() {
+      const chords = generateChords();
+      const chordForms = generateChordForms(chords);
+      const [chord1, chord2] = getRandomPair(chordForms);
+      document.getElementById('chords').textContent =
+        `Practice these chord changes for 5 minutes: ${chord1}, ${chord2}`;
+      document.getElementById('timer').textContent = "Timer: 5:00";
+      let timeLeft = 300;
+      const interval = setInterval(() => {
+        timeLeft--;
+        const min = Math.floor(timeLeft / 60);
+        const sec = String(timeLeft % 60).padStart(2, '0');
+        document.getElementById('timer').textContent = `Timer: ${min}:${sec}`;
+        if (timeLeft <= 0) {
+          clearInterval(interval);
+          document.getElementById('timer').textContent = "5 minutes are up! Practice is over.";
+        }
+      }, 1000);
+    };
+  </script>
+    <footer>
+        <p>&copy; 2023 John Skaggs. All rights reserved.</p>
+    </footer>
+    <script src="scripts/nav.js"></script>  
+</body>
+</html>
