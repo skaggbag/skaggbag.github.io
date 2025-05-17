@@ -88,20 +88,6 @@ figcaption {
   margin-top: 5px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Align items to the center */
-    gap: 20px; /* Add spacing between the logo and the links */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    font-weight: bold;
-}
 
 .chord-practice-center {
     display: flex;
@@ -111,7 +97,39 @@ nav a {
 }
 
 
-/* Add a media query for smaller screens */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/*This must goe after all other styles */
+.nav-links a {
+    text-decoration: none !important;
+    color: #333 !important;
+    font-weight: bold !important;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column; /* Stack items vertically */
@@ -121,7 +139,30 @@ nav a {
     nav a {
         margin: 5px 0; /* Adjust margin for vertical layout */
     }
+    .nav-logo {
+        flex: 1;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 1rem;
+        background: #fff;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        padding: 1rem;
+        border-radius: 8px;
+        z-index: 100;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    nav {
+        position: relative;
+    }
 }
-
-/*
 
