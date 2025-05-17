@@ -132,7 +132,7 @@ nav {
 
 @media (max-width: 600px) {
     nav {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Stack items vertically */
         gap: 10px; /* Reduce spacing between items */
     }
 
