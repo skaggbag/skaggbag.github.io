@@ -53,8 +53,8 @@
       const chords = generateChords();
       const chordForms = generateChordForms(chords);
       const [chord1, chord2] = getRandomPair(chordForms);
-      document.getElementById('chords').textContent =
-        `Practice these chord changes for 5 minutes: ${chord1}, ${chord2}`;
+      document.getElementById('chords').innerHTML =
+        `Practice these chord changes for 5 minutes:<br> ${chord1}, ${chord2}`;
       document.getElementById('timer').textContent = "Timer: 5:00";
       let timeLeft = 300;
       const interval = setInterval(() => {

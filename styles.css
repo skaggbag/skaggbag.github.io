@@ -130,6 +130,18 @@ nav {
     cursor: pointer;
 }
 
+#timer {
+    font-size: 4rem; /* Makes the timer text much larger */
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif; /* Modern font stack */
+    font-weight: bold;
+    color: #222;
+    margin: 2rem 0;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+
+
 @media (max-width: 600px) {
     nav {
         flex-direction: row; /* Stack items vertically */
