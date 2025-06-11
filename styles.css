@@ -12,7 +12,7 @@ header {
     background-size: cover;         /* Cover the entire header area */
     background-position: center;    /* Center the image */
     background-repeat: no-repeat;   /* Prevent tiling */
-    min-height: 440px;              /* Adjust height as needed */
+    min-height: 660px;              /* Adjust height as needed */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;      /* Align content to the bottom */
