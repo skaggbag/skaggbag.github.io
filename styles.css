@@ -8,14 +8,24 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    background-image: url('images/john_through_the_years.png');
+    background-size: cover;         /* Cover the entire header area */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Prevent tiling */
+    min-height: 220px;              /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;      /* Align content to the bottom */
+    align-items: center;
+    color: #fff;                    /* Optional: white text for contrast */
+    padding-bottom: 1em;            /* Space below text */
 }
 
 header > p {
     text-align: center !important;
+    background: rgba(0,0,0,0.5); /* Optional: semi-transparent background for text */
+    padding: 0.5em 1em;
+    border-radius: 8px;
 }
 
 section {
