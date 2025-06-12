@@ -153,7 +153,7 @@ nav {
 .button {
   display: inline-block;
   padding: 0.5em 1.2em;
-  background-color: #007BFF;
+  background-color: #555;
   color: #fff !important;
   border: none;
   border-radius: 5px;
@@ -164,7 +164,7 @@ nav {
   transition: background 0.2s;
 }
 .button:hover {
-  background-color: #0056b3;
+  background-color: #333;
 }
 
 
