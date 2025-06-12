@@ -125,8 +125,9 @@ nav {
     gap: 20px;
 }
 
-/*This must goe after all other styles */
+/*This must go after all other styles */
 .nav-links a {
+    font-size: 2rem;
     text-decoration: none !important;
     color: #333 !important;
     font-weight: bold !important;
@@ -137,6 +138,7 @@ nav {
     background: none;
     border: none;
     font-size: 3rem;
+    color: #333;
     cursor: pointer;
 }
 
@@ -151,7 +153,8 @@ nav {
 }
 
 .button {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   padding: 0.5em 1.2em;
   background-color: #555;
   color: #fff !important;
