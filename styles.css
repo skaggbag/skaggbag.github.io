@@ -13,6 +13,8 @@ header {
     background-position: top center;    /* Center the image, keep the top from getting cut off */
     background-repeat: no-repeat;       /* Prevent tiling */
     min-height: 660px;                  /* Adjust height as needed */
+    max-width: 1200px;      /* Limit header width */
+    margin: 0 auto;         /* Center header */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;          /* Align content to the bottom */
