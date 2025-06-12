@@ -127,9 +127,9 @@ nav {
 
 /*This must go after all other styles */
 .nav-links a {
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-decoration: none !important;
-    color: #333 !important;
+    color: #555 !important;
     font-weight: bold !important;
 }
 
@@ -153,8 +153,7 @@ nav {
 }
 
 .button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
   padding: 0.5em 1.2em;
   background-color: #555;
   color: #fff !important;
